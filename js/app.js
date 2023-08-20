@@ -4017,16 +4017,16 @@
             scrollY > 0 ? document.querySelector(".header").classList.add("_scroll") : document.querySelector(".header").classList.remove("_scroll");
             scrollY > 0 ? document.querySelector(".page__up").classList.add("_scroll") : document.querySelector(".page__up").classList.remove("_scroll");
         }));
-        let informationItems = document.querySelectorAll(".information__item");
         let pText = document.querySelectorAll(".innovate__text p");
+        let informationItems = document.querySelectorAll(".information__item");
         let delay = 0;
-        informationItems.forEach((item => {
-            item.style.transitionDelay = `${delay}s`;
-            delay += .3;
-        }));
         pText.forEach((p => {
             p.style.transitionDelay = `${delay}s`;
             delay += .2;
+        }));
+        informationItems.forEach((item => {
+            item.style.transitionDelay = `${delay}s`;
+            delay += .3;
         }));
         window["FLS"] = true;
         isWebp();
