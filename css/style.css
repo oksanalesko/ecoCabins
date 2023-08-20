@@ -1320,6 +1320,7 @@ body::after {
     height: 100%;
     top: 0;
     right: -100%;
+    scrollbar-gutter: stable;
     background-color: rgba(27, 51, 44, 0.9);
     overflow: auto;
     padding: 7.5rem 1.875rem 1.875rem 1.875rem;
